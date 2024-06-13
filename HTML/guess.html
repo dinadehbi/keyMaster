@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the correct notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Irish+Grover&family=Jua&family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <style>
+        @font-face{
+    font-family: 'font3';
+    src : url('Akaya_Kanadaka');
+}
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        *::-webkit-scrollbar {
+            width: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(#F4EDE8,#C0C7C7);
+        }
+        section{
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(#F4EDE8,#C0C7C7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            height: 40vw;
+            width: 80vw;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .container h1{
+            font-size: 5vw;
+            text-align: center;
+            font-family: "Irish Grover", system-ui;
+
+        }
+        .container button{
+            height: 4vw;
+            width: 12vw;
+            border-radius: 0.5vw;
+            color: #156B86;
+            border: none;
+            margin-top: 2vw;
+            font-size: 1.5vw;
+            font-family: font3;
+            font-weight: bold;
+            cursor: pointer;
+            background: linear-gradient(to right,#F4EDE8,#C0C7C7);
+        }
+        .container button:hover{
+            background: linear-gradient(to left,#F4EDE8,#C0C7C7);
+
+        }
+        .container div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        
+        }
+        .container img{
+            height: 35vw;
+            width: 25vw;
+        }
+        .para{
+            font-family: "Kulim Park", sans-serif;
+
+        }
+        .notes-bck{
+            background-color: yellow;
+            height: 5vw;
+            width: 50vw;
+        }
+        .container2{
+            display: flex;
+            height: inherit;
+            width: inherit;
+            background-color: rgb(183, 98, 98);
+        }
+       
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="container">
+                <div>
+                <h1>Guess the <br> correct notes</h1>
+                <button id="start">start</button>
+                </div>
+            <img src="../Images/guess.png" alt="">
+
+        </div>
+     
+        
+    </section>
+    <script>
+        document.getElementById('start').addEventListener('click', function(){
+            window.location.href='..//HTML//GameNotes.html';
+        });
+    </script>
+  
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+@font-face{
+    font-family: 'font2';
+    src : url('ISOCPEUR.ttf');
+}
+.body1{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#F4EDE8,#C0C7C7);
+    background-repeat: no-repeat;
+    overflow: hidden;
+        overflow-x: hidden;
+
+}
+.section1{
+    height: 56vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.catButton{
+    border-radius: 50%;
+    height: 15vw;
+    width: 15vw;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catButton img{
+    height: 12vw;
+    width: 12vw;
+   
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40vw;
+    width: 40vw;
+
+}
+.para{
+    text-align: center;
+    margin-bottom: 1vw;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+.Categories{
+    font-size: 4vw;
+    color: #156B86;
+    margin-top: 4vw;
+    font-family: font2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 450px) {
+    aside{
+        height: 200vw;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .levels{
+        height: 30vw;
+        width: 30vw;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}

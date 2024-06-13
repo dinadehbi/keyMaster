@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <title>Piano Exercices</title>
+    <style>
+        *{
+
+            padding: 0;
+            margin: 0;
+
+
+        }
+        *::-webkit-scrollbar{
+            width: 0;
+        }
+        body{
+            height: 55vw;
+            width: 100vw;
+            background-color: #ffffff;
+
+        }
+
+        .section2 {
+            height: 40vw;
+            width: 90vw;
+            background-color: #ffffff;
+        }
+
+        .logoCon {
+            height: auto;
+            width: auto; 
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.7vw;
+        }
+        .logo {
+            margin-bottom: 2vmin;
+            height: 7vw;
+            width: 8vw;
+        }
+        .Keymaster {
+            font-size: 2vw; 
+            display: flex;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            height: 9vw;
+            width: 100vw;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 70vw;
+            height: auto;
+        }
+        .navbar{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 1.2vw; 
+            position: relative;
+            font-weight: bold;
+        }
+        .navbar::after{
+            content: '';
+            width: 0;
+            height: 0.2vw;
+            background-color: #156B86; 
+            position: absolute;
+            left: 0;
+            top: 1.5vw;
+            transition: 0.5s;
+        }
+
+        .navbar:hover::after{
+            width: 100%;
+        }
+        aside{
+            height: 100vw;
+            width: 100vw;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .levels{
+            box-shadow: 5px 5px 30px 10px rgb(170, 170, 170);
+            height: 14vw;
+            width: 16vw;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            margin-left: 0.8vw;
+        }
+            .con1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 3vw;
+            width: 100%;
+
+            }
+            .con1 img{
+            height:3vw;
+            width: 5vw;
+            }
+            .con2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 7vw;
+            width: 100%;
+            }
+            h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            .con2 img{
+            height: 5vw;
+            width: 10vw;
+            }
+            .con3{
+            height: 4vw;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            #password{
+                font-size: 2.5vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(216, 216, 216);
+                margin-right: 0.5vw;
+
+            }
+            .con1 h1{
+                font-size: 2.7vw;
+                margin-left: 0.5vw;
+            }
+            .con3 h2{
+                font-size: 2vw;
+            }
+            .section1 i{
+                font-size: 4vw;
+                color: #156B86;
+            }
+
+
+    </style>
+
+</head>
+<body>
+    <section class="section2">
+        <header>
+            <div class="logoCon">
+                <img src="../Images/KeymasterLogo.png" class="logo">
+                <h3 class="Keymaster">Keymaster</h3> 
+            </div>  
+            <nav>
+                <a href="../HTML/home.html" class="navbar">Home</a>
+                <a href="#" class="navbar">introdiction</a>
+                <a href="../HTML/categories1.html" class="navbar">Categorie</a>
+                <p style="font-size: 1.5vw;" id="username"></p>
+            </nav>      
+        </header>
+    
+        
+        <aside id="my-aside">
+        <div class="levels exercise1" id="Exercice1">
+    <div class="con1">
+        <h1>1</h1>
+    </div>
+    <div class="con2">
+        <img src="../Images/hands.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 1:</h2>
+    </div>
+</div>
+<div class="levels exercise2">
+    <div class="con1">
+        <h1>2</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img2.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 2:</h2>
+    </div>
+</div>
+<div class="levels exercise3">
+    <div class="con1">
+        <h1>3</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img3.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 3:</h2>
+    </div>
+</div>
+<div class="levels exercise4">
+    <div class="con1">
+        <h1>4</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img4.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 4:</h2>
+    </div>
+</div>
+<div class="levels exercise5">
+    <div class="con1">
+        <h1>5</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img5.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 5:</h2>
+    </div>
+</div>
+<div class="levels exercise6">
+    <div class="con1">
+        <h1>6</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img6.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 6:</h2>
+    </div>
+</div>
+<div class="levels exercise7">
+    <div class="con1">
+        <h1>7</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img7.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 7:</h2>
+    </div>
+</div>
+<div class="levels exercise8">
+    <div class="con1">
+        <h1>8</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img8.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 8:</h2>
+    </div>
+</div>
+<div class="levels exercise9">
+    <div class="con1">
+        <h1>9</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img9.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 9:</h2>
+    </div>
+</div>
+<div class="levels exercise10">
+    <div class="con1">
+        <h1>10</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img10.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 10:</h2>
+    </div>
+</div>
+<div class="levels exercise11">
+    <div class="con1">
+        <h1>11</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img11.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 11:</h2>
+    </div>
+</div>
+<div class="levels exercise12">
+    <div class="con1">
+        <h1>12</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img12.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 12:</h2>
+    </div>
+</div>
+<div class="levels exercise13">
+    <div class="con1">
+        <h1>13</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img13.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 13:</h2>
+    </div>
+</div>
+<div class="levels exercise14">
+    <div class="con1">
+        <h1>14</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img14.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 14:</h2>
+    </div>
+</div>
+<div class="levels exercise15">
+    <div class="con1">
+        <h1>15</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img15.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 15:</h2>
+    </div>
+</div>
+<div class="levels exercise16">
+    <div class="con1">
+        <h1>16</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img16.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 16:</h2>
+    </div>
+</div>
+<div class="levels exercise17">
+    <div class="con1">
+        <h1>17</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img17.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 17:</h2>
+    </div>
+</div>
+<div class="levels exercise18">
+    <div class="con1">
+        <h1>18</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img18.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 18:</h2>
+    </div>
+</div>
+<div class="levels exercise19">
+    <div class="con1">
+        <h1>19</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/img19.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 19:</h2>
+    </div>
+</div>
+<div class="levels exercise20">
+    <div class="con1">
+        <h1>20</h1>
+        <i class="fas fa-lock" id="password"></i> 
+    </div>
+    <div class="con2">
+        <img src="../Images/hands.svg" alt="image">
+    </div>
+    <hr>
+    <div class="con3">
+        <h2>Exercice 20:</h2>
+    </div>
+</div>
+
+    
+        </aside>
+        
+
+    
+    </section>
+
+    <script>
+        const exercice1 = document.getElementById("Exercice1");
+              exercice1.addEventListener("click", () => {
+                  window.location.href= "../HTML/Hanon.html";
+              });
+        
+    </script>
+
+</body>
+
+</html>

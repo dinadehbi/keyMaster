@@ -1,0 +1,537 @@
+
+@font-face{
+    font-family: 'font1';
+    src : url('Mina.zip');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: auto;
+    width: 100vw;
+    background-color: #F5F3F4;
+    overflow-x: hidden;
+
+}
+
+.section1 {
+    height: 60vw;
+    width: 100vw;
+    background-image: url(../Images/background\ svg.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #F5F3F4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9vw;
+    width: 100vw;
+}
+
+.logoCon {
+    height: auto;
+    width: auto; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7vw;
+}
+.logo {
+    margin-bottom: 2vmin;
+    height: 7vw;
+    width: 8vw;
+}
+.Keymaster {
+    font-size: 2vw; 
+    display: flex;
+}
+nav {
+    height: auto;
+    width: 70vw; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 170px;
+
+}
+.loginbutton{
+    background-color: #585666;
+    height: 2.5vw;    
+    width: 5vw;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1vw;
+}
+.loginbutton:hover{
+    background-color: #156B86;
+}
+.Getstarted{
+    background-color: #585666;
+    height: 2.5vw;    
+    width: 7vw;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+#menu{
+    margin-right: 2vw;
+    color: rgb(0, 0, 0);
+    font-size: 3vmin;
+    float: right;
+    display: none;
+    margin-left: 20pvw;
+
+}
+.section2{
+    height: 100vh; 
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.div1{
+    height: 50vw;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pianistCon{
+    height: 95vmin;
+    width: 40vw;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+}
+.pianistMan{
+    height: 83vmin;
+    width: 100vmin;
+    background-image: url("../Images/pianistman.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.con1{
+    font-size: 1vmin;
+}
+
+.con1 h1{
+    font-size: 3vw;
+
+}
+.con1 .key{
+    color: #585666;
+}
+.con1 button{
+    width: 40%;
+}
+.notes{
+   height: 50vw;
+   width: 10%;
+   display: flex;
+   align-items: end;
+
+}
+.notes img{
+    height: 15vw;
+    position: relative;
+    right: 1vw;
+
+}
+.navbar{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2vw; 
+    position: relative;
+    font-weight: bold;
+}
+.navbar::after{
+    content: '';
+    width: 0;
+    height: 0.2vw;
+    background-color: #156B86; 
+    position: absolute;
+    left: 0;
+    top: 1.5vw;
+    transition: 0.5s;
+}
+
+ .navbar:hover::after{
+    width: 100%;
+}
+.section3{
+    height: 40vw;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.laptop{
+   background-image: url(../Images/laptop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vw;
+    width: 50%;
+    position: relative;
+    right: 4vw;
+}
+.AboutCon{
+    height: 50vw;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.AboutCon h1 {
+    align-items: center ;
+    font-size: 2.5vw;
+    margin-top: 2vw;
+}
+.AboutCon p{
+    text-align: center;
+    font-size: 1.2vw;
+    color: #acacac;
+    margin-top: 2vw;
+}
+.AboutCon button{
+    margin-top: 2vw;
+}
+.section4{
+    height: 50vw;
+    width: 100vw;
+
+}
+.div2{
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.typing{
+    height: 9vw;
+    width: 10vw;
+}
+.div2 h1{
+    font-size: 2vw;
+    
+}
+.div2 p{
+    font-size: 1vw;
+    height: auto;
+    width: auto;
+    margin-top: 5px;
+
+}
+.con2{
+    width: 50%;
+    height: auto;
+}
+.con3{
+    width: 50%;
+    height: auto;
+}
+.iconSong{
+    height: 6vw;
+}
+.con4{
+    background-color: #C0C7C7;
+     height: 7vw;
+     width: 100vw;
+     display: flex;
+     padding: 2vw;
+     justify-content:space-between;
+     align-items: center;
+}
+.con4 h2{
+    font-size: 10vw;
+}
+.con4 h1{
+    font-weight: 100;
+    font-size: 2.5vw;
+    color: white;
+}
+.vergul{
+    height: 8vw;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15vw;
+    margin-bottom: 10vw;
+    color: white;
+
+}
+
+.comments{
+    background-color: #C0C7C7;
+    height: 15vw;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.comments div{
+    background-color: white;
+    height: 15vw;
+    width: 28vw;
+    border-radius: 2vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.coment1 b{
+    font-size: 1.3vw;
+}
+.coment1 p{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    margin-top: 1.5vw;
+}
+.aside1{
+    height: 5vw;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C0C7C7;
+}
+.users{
+    height: 4vw;
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+}
+.users p{
+    font-size: 1.5vw;
+}
+.user{
+    color: rgb(156, 156, 156);
+    height: 2.5vw;
+    width: 2.5vw;
+}
+.fa-solid{
+    font-size: 1.6vw;
+}
+.scrol{
+    height: 3vw;
+    width: 100vw;
+    background-color: #C0C7C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con5{
+    height: 3vw;
+    width: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.circle{
+    border-radius: 50%;
+    background-color: white;
+    height: 1vw;
+    width: 1vw;
+}
+.border{
+    border-radius: 50%;
+    height: 1vw;
+    width: 1vw;
+    border: 0.2vw solid white;
+}
+.section5{
+    height: 50vw;
+    width: 100vw;
+    background-color: #F5F3F4;
+    display: flex;
+    align-items: center;
+}
+.section5 h1{
+    font-size: 2.5vw;
+}
+.con6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vw;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.con6 h1{
+    font-size: 4vw;
+}
+.FAQ{
+    height: 12vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FAQ1{
+    height: 5vw;
+    width: 85vw;
+    display: flex;
+    text-align: center;
+    align-items: start;
+    background-color: #C0C7C7;
+    justify-content: center;
+    border-radius: 2vw;
+    padding-left: 2vw;
+    flex-direction: column;
+}
+
+  .con6 h2{
+    font-size: 2vw;
+    padding-left: 2vw;
+    margin-top: 0.6vw;
+
+  }
+  #toggle {
+    color: #156B86;
+    cursor: pointer;
+    font-size: 3vw;
+
+  }
+  #newDiv{
+    height: 7vw;
+    width: 85vw;
+  }
+  #paragraph{
+    color: rgb(0, 0, 0);
+    font-size: 1.5vw;
+    text-align: start;
+  }
+
+  .section6{
+    height: 55vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-image: url("../Images/bckk.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .con7{
+    width: 100vw;
+    height: 55vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .con7 h1{
+    font-size: 5vw;
+    margin-top: 4vw;
+    font-family: font1;
+  }
+  .con7 p{
+    margin-top: 10vw;
+    font-style: italic;
+  }
+  .button2{
+    cursor: pointer;
+    background-color: #585666;
+    color: white;
+    border-radius: 30px;
+    font-style: italic;
+    font-weight: 100;
+    border: none;
+    height: 5vw;
+    width: 20vw;
+    margin-top: 2vw;
+    font-size: 2vw;
+    text-align: center;
+
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotateX(180deg);
+    }
+  }
+
+
+  @media only screen and (max-width: 600px) {
+   nav{
+        display: none;
+      
+    }
+    #menu {
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

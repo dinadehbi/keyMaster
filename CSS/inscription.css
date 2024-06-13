@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1vw;
+}
+
+body {
+    height: 48vw;
+    width: 100vw;
+    background-image: url(../Images/inscription.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+section {
+    height: 65vw;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 10vw;
+}
+
+form {
+    height: 40vw;
+    width: 30vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 12vw;
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.con1 {
+    height: 10vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.button2 {
+    background-color: #585666;
+    height: 3vw;
+    width: 10vw;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1vmin;
+}
+
+.button1 {
+    height: 3vw;
+    width:10vw;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1vmin;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+input {
+    height: 3vw;
+    width: 100%;
+    border: none;
+    font-family: font3;
+    padding-left: 2vw;;    
+    background-color:rgba(255,255,255,0);
+    border-bottom: 0.1vw rgb(136, 136, 136) solid;
+}
+
+input:focus {
+    outline: 0;
+}
+
+input::placeholder {
+    color: #585666;
+    opacity: 0.5;
+}
+
+.inputs {
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.con{
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #585666;
+    height: auto;
+    width: auto;
+}
+
+.con2 {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
+
+aside {
+    height: 30vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.con3 {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.con2 a {
+    color: #A09E9E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div i {
+    color: #156B86;
+    position: relative;
+    left: 1vw;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+#Ereur{
+    color: white;
+    height: 3vw;
+    width: 23vw;
+    background-color: rgb(241, 67, 67);
+    border-radius: 1vw;
+    font-size: 1vw;
+    display: none;
+    text-align: center;
+}

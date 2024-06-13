@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../CSS/inscription.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <section>
+        <form  id="signupForm" method="post">
+            <div class="con1">
+                <button class="button2">                
+                    <i class="fa-solid fa-user" style="color: white;"></i>
+                    <a href="../HTML/signin.html">Sign In</a>
+                </button>
+                <button class="button1">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <p>Sign Up</p>
+                </button>  
+            </div>
+            <div id="Ereur"></div>
+            <br>
+
+            <aside>
+                <div class="inputs">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Username" name="username">
+                </div>
+                <br>
+                <div class="inputs">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email" name="emeil">
+                </div>
+                <br>
+                <div class="inputs">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password" id="password" name="password">
+                    <i class="fa-solid fa-eye-slash toggle-password" data-toggle="password"></i>
+                </div>
+                <br>
+                <div class="inputs">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <input type="password" placeholder="Confirm Password" id="confirm-password" name="passwrod-conf">
+                    <i class="fa-solid fa-eye-slash toggle-password" data-toggle="confirm-password"></i>
+                </div>
+                <br>
+                <button class="button2" id="signup" style="width: 60%;">
+                   Sign In
+                </button>
+                <br>
+                <div class="con3">
+                    <p>Or sign in with:</p>
+                    <i class="fa-brands fa-facebook" style="color: #156B86;"></i>
+                    <i class="fa-brands fa-google" style="color: #156B86;"></i>
+                </div>
+            </aside>
+        </form>
+    </section>
+    <script src="../JavaScripte/inscription.js"> </script>
+    
+</body>
+</html>
